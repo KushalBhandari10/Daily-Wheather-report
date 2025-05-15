@@ -9,7 +9,7 @@ A Python bot that scrapes daily weather data, saves it in a report folder, and e
 - ✅ Scrapes weather data using `requests` + `BeautifulSoup`
 - ✅ Saves data as a JSON file in a timestamped folder
 - ✅ Sends report via email (SMTP with Gmail)
-- ✅ Runs daily at 7:00 AM using `schedule`
+- ✅ Runs every 10seconds `schedule`
 
 ---
 
@@ -51,7 +51,7 @@ Replace the URL in `scrape_weather()` with your location URL from [weather.com](
 ## 🧪 Run Manually
 
 ```python
-daily_bot()
+weather_report()
 ```
 
 ---
@@ -59,10 +59,10 @@ daily_bot()
 ## ▶️ Run Automatically
 
 ```bash
-python daily_bot.py
+python weather_report.py
 ```
 
-The script runs continuously and sends the report every day at **7:00 AM**.
+The script runs continuously and sends the report every 10Second.
 
 ---
 
